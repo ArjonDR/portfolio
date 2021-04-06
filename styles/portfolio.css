@@ -1,0 +1,10 @@
+
+
+header{
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    border-bottom: 2px solid #CD853F;
+    padding: .9375em 1.875em .9375em;
+    background: url('../images/downtown_pic.jpg') center no-repeat;
+    background-size: cover;
+}
