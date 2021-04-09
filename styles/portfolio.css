@@ -1,12 +1,81 @@
 
+html{
+    
+}
+
+body{
+/*
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 8fr;
+    grid-column-gap: 3%;
+*/
+    font-family: sans-serif;
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0;
+/*    border: solid .0625em steelblue;*/
+/*    box-shadow: 0 .625em 1.25em .625em black;*/
+    background: url('../images/arjon_uncw.JPG') center no-repeat;
+    background-size: 100%;
+/*    background-size: 767px;*/
+    background-position:top; 
+}
 
 /*
-header{
-    grid-row: 1;
-    grid-column: 1 / span 2;
-    border-bottom: 2px solid #CD853F;
-    padding: .9375em 1.875em .9375em;
-    background: url('../images/downtown_pic.jpg') center no-repeat;
+section {
+    height: 100%;
+    background: url('../images/arjon_uncw.JPG') center no-repeat;
     background-size: cover;
 }
 */
+
+header{
+/*
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    border-bottom: 2px solid #CD853F;*/
+    padding: .9375em 1.875em .9375em;
+    
+}
+
+#nav_menu ul{ 
+    list-style-type: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#nav_menu ul li a{
+    display: block;
+    text-align: center;
+    padding: .7em 0 .7em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+/*
+    background-color: #CD853F;
+    white-space: nowrap;
+*/
+}
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus{
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    body{
+        background-size: 767px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    
+    
+/*    body{background-size: 479px;}*/
+}
